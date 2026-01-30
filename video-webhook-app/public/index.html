@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Video Webhook Integration - Send video URLs to n8n workflows">
-  <meta name="robots" content="noindex, nofollow">
-  <title>Video Webhook | n8n Integration</title>
+  <title>Video Webhook</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="background-glow"></div>
   <div class="background-grid"></div>
-  
+
   <main class="container">
     <header class="header">
       <div class="logo">
@@ -52,15 +52,8 @@
             </svg>
             URL del Video
           </label>
-          <input 
-            type="url" 
-            id="videoUrl" 
-            name="videoUrl" 
-            class="form-input"
-            placeholder="https://youtube.com/watch?v=..."
-            required
-            autocomplete="off"
-          >
+          <input type="url" id="videoUrl" name="videoUrl" class="form-input"
+            placeholder="https://youtube.com/watch?v=..." required autocomplete="off">
           <span class="input-hint">Soporta YouTube, Vimeo, y cualquier URL de video válida</span>
         </div>
 
@@ -123,4 +116,5 @@
 
   <script src="app.js"></script>
 </body>
+
 </html>
