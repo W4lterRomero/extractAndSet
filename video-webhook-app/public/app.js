@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
 
         const videoUrl = videoUrlInput.value.trim();
-        const method = document.getElementById('httpMethod').value;
 
         // Client-side validation
         if (!videoUrl) {
@@ -97,10 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({
-                    videoUrl,
-                    method,
-                }),
+                body: JSON.stringify({ videoUrl }),
             });
 
             const data = await response.json();
